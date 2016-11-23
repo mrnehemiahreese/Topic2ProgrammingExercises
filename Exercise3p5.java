@@ -1,4 +1,4 @@
-	import java.util.Scanner;
+import java.util.Scanner;
 public class Exercise3p5 {
 
 public static void main(String[] args) {
@@ -11,15 +11,17 @@ public static void main(String[] args) {
 			 int jump = input.nextInt() ;
 			 int endday = 999;
 			 
-			 if (startday == 0)
-				 endday = jump
-			 else if (startday % 6 == 0)
+			 
+			 
+			 if (startday % 6 == 0)
 				 endday = startday;
 			 else if ((startday + jump) > 6)
 				 endday = (startday + jump) % 6;
 			 else 
 				 endday = startday + jump;
 			 
+			 if (startday == 0)
+				 endday = endday + (jump % 6);
 			
 			 switch (startday) {
 			 case 0: System.out.println("Todays is Sunday and the future day is  ");
@@ -58,23 +60,7 @@ public static void main(String[] args) {
 			 default: System.out.print("Error: invalid day");
 			 System.exit(1);
 			 }
-			 /*
-			 if (day == 0)
-				 
-			  else if (day == 1)
-				  System.out.println("Todays is Monday and the future day is ");
-			  else if (day == 2)
-				 
-			  else if (day == 3)
-				  
-			  else if (day == 4)
-				  System.out.println("Todays is Thursday and the future day is ");
-			  else if (day == 5)
-				  System.out.println("Todays is Friday and the future day is ");
-			  else if (day == 6)
-				  System.out.println("Todays is Saturday and the future day is ");
-			 
-			 */
+			
 			 
 						    											
 }
