@@ -3,7 +3,7 @@ public class Exercise3p5 {
 
 public static void main(String[] args) {
 	
-	 		System.out.print("What day is it? (Enter 0 for Sunday, 1 for Monday, ... ");
+	 		 System.out.print("What day is it? (Enter 0 for Sunday, 1 for Monday, ... ");
 			 Scanner input = new Scanner(System.in);
 			 int startday = input.nextInt();
 			 System.out.print("How many days do you want to jump ahead?");
